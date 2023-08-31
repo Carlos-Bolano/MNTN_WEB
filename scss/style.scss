@@ -1,0 +1,138 @@
+@use '../scss/reset.scss';
+@use '../scss/variables.scss';
+
+// -------- HEADER SECTION --------
+
+.Header{
+    padding: 2em 0em;
+    // background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    &-nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: var(--secondTypography);
+        font-size: 1em;
+        color: var(--whiteColor);
+    }
+    &-logo{
+        font-family: var(--mainTypography);
+        font-size: 2em;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: .02em;
+    
+    }
+    &-svg{}
+    &-ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    &-li{
+        margin: 0 1.25em;
+    }
+    &-a{}
+    &-btnBox{
+       
+    }
+    &-iconBtn{
+
+    }
+    &-button{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3em;
+        cursor: pointer;
+    }
+}
+
+// -------- COVER SECTION --------
+
+.Cover{
+    height: 100vh;
+    width: 98.8vw;
+    position: relative;
+
+    &-img{
+        position: absolute;
+        width: max-content;
+        height:max-content;
+    }
+    &-img1{
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &-img2{
+        z-index: 1;
+        top: -400px;
+    }
+    &-img3{
+        z-index: 4;
+        top: 300px;
+        left: 0;
+        right: 0;
+    }
+    &-img4{
+        z-index: 4;
+        top: 500px;
+        left: 0;
+        right: 0;
+    }
+
+    &-content{
+        color: white;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    &-rrss{
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        background: #000;
+
+    }
+    &-follow{}
+    &-icon{}
+    &-icon{}
+    &-texts{}
+    &-span{}
+    &-title{
+        font-size: 65px;
+        max-width: 650px;
+        font-weight: 500;
+        text-transform: capitalize;
+        // background-color: #000;
+    }
+    &-btn{}
+    &-siderbar{
+        width: 100px;
+        background-color: #000;
+    }
+}
+
+// -------- COVER SECTION --------
+
+.Informations{
+    background-color: #000;
+   padding-top: 400px;
+    color: white;
+    z-index: 8;
+}
